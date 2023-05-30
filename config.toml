@@ -1,4 +1,4 @@
 baseURL = 'https://beta.oyvindmal.no'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'beta.oyvindmal.no'
 theme = 'oyvind23'
