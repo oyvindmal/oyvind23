@@ -12,7 +12,7 @@ pool:
 steps:
 - checkout: self
   displayName:  "Checking out repo"
-- task: HugoTask@2
+- task: giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2
   inputs:
     source: '/'
     destination: '$(Build.ArtifactStagingDirectory)'
