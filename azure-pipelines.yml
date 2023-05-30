@@ -11,7 +11,7 @@ pool:
 
 
 steps:
-- task: HugoTask@1
+- task: giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2
   inputs:
     source: '$(Build.SourcesDirectory)'
     destination: '$(Build.ArtifactStagingDirectory)'
