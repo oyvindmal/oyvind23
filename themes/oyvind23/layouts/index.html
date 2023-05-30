@@ -1,1 +1,5 @@
 <h1>Built with hugo and deployed with azure pipelines</h1>
+{{ range .Site.RegularPages }}
+<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+<p>{{ .Content }}</p>
+{{ end }}
