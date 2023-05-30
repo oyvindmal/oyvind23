@@ -4,7 +4,7 @@ date: 2023-05-30T22:10:52+02:00
 draft: false
 ---
 
-{{< box  class="textwhite" style="background-image: url(https://placekitten.com/1280/720);">}}
+{{< box  style="background-image: url(/bg.jpg);">}}
 <h1 class="headline">What is lorem ipsum?</h1>
 {{< /box >}}
 
