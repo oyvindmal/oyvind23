@@ -36,6 +36,7 @@ header {
     opacity: 0.5;
     display: flex;
     justify-content: center;
+    border:1px #000 solid;
 }
 .row {
     width:100%;
@@ -47,7 +48,11 @@ video {
 }
 
 .boxcontent {
-    padding:10px;
+    padding:25px;
+}
+
+.aligntop {
+    align-items: flex-start !important;
 }
 .box {
     width:100vw;
