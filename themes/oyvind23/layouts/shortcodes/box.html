@@ -1,6 +1,5 @@
-<!-- layouts/shortcodes/myshortcode.html -->
-<div class="box">
-    <!-- Shortcode content -->
-    {{ .Inner }}
-  </div>
-  
+<!-- layouts/shortcodes/box.html -->
+{{ $style := .Get "style" }}
+<div class="box" {{ with $style }}style="{{ $style | safeCSS }}"{{ end }}>
+  {{ .Inner }}
+</div>
