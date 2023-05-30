@@ -9,11 +9,15 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+
 steps:
-- checkout: self
-  displayName:  "Checking out repo"
-- task: giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2
+- task: HugoTask@1
   inputs:
-    source: '/'
+    source: '$(Build.SourcesDirectory)'
     destination: '$(Build.ArtifactStagingDirectory)'
-    baseURL: 'https://beta.oyvindmal.no'
+    baseURL: 'http://blogapi.oyvindmal.no'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
