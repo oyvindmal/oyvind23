@@ -45,6 +45,10 @@ header {
 video {
     height:60vh;
 }
+
+.boxcontent {
+    padding:10px;
+}
 .box {
     width:100vw;
     height:100vh;
