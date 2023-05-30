@@ -1,5 +1,8 @@
 <!-- layouts/shortcodes/box.html -->
 {{ $style := .Get "style" }}
-<div class="box" {{ with $style }}style="{{ $style | safeCSS }}"{{ end }}>
+{{ $classes := slice "box" }}
+{{ $extraClasses := .Get "class" }}
+{{ $classes = union $classes (split $extraClasses " ") }}
+<div class="{{ delimit $classes " " }}"{{ with $style }} style="{{ $style | safeCSS }}"{{ end }}>
   {{ .Inner }}
 </div>
