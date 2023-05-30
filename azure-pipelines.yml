@@ -11,11 +11,12 @@ pool:
 
 
 steps:
-- task: giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2
+- task: hugo-build-task@0
   inputs:
     source: '$(Build.SourcesDirectory)'
     destination: '$(Build.ArtifactStagingDirectory)'
-    baseURL: 'http://blogapi.oyvindmal.no'
+    baseURL: 'https://beta.oyvindmal.no'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
