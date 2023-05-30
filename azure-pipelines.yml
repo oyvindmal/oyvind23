@@ -10,7 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
+- checkout: self
+  displayName:  "Checking out repo"
 - task: HugoTask@2
   inputs:
     source: '/'
