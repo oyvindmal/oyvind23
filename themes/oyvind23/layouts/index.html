@@ -3,18 +3,26 @@
     <div class="container">
     
         <div class="frontpagecontent">
-            {{ range .Site.RegularPages.GroupBy "Type" }}
-            {{ if not (or (eq .Key "page") (eq .Key "pages")) }}
+
+        
+            {{ range .Site.RegularPages.ByDate }}
+            {{ if ne .Type "Page" }}
               <div class="frontpagebox">
-                <h2>{{ .Key }}</h2>
-                <ul>
-                  {{ range .Pages }}
-                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                  {{ end }}
-                </ul>
+                <div class="pageblock">
+                  <div class="front-image">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                  </div>
+                  <div class="front-title">
+                    <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+                  </div>
+                </div>
               </div>
             {{ end }}
           {{ end }}
+          
+          
+          
+          
           
 
         </div>

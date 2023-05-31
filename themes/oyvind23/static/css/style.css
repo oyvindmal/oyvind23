@@ -169,3 +169,36 @@ header li {
 .frontpage {
     background: url(../bg.jpg);
 }
+
+
+  
+  .frontpagebox h2 {
+    /* Styles for the group header */
+  }
+  
+  .pageblock {
+    /* Styles for the individual page block */
+  }
+  
+  .front-image {
+    /* Styles for the image div */
+  }
+  
+  .front-image img {
+    /* Styles for the image within the image div */
+  }
+  
+  .front-title {
+    /* Styles for the title div */
+  }
+  
+  .front-title a {
+    /* Styles for the title link */
+    color: #000;
+    
+  }
+  
+  .front-title h3 {
+    /* Styles for the title heading within the title div */
+  }
+  
