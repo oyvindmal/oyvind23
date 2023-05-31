@@ -35,6 +35,16 @@
                 </ul>
         
             </div>
+            <div class="row">
+                {{ range where .Site.RegularPages "Type" "not in" (slice "pages") }}
+                <!-- Your code here -->
+                <h2>{{ .Title }}</h2>
+                <h3>{{ .Type }}</h3>
+                <a  class="readmorelink" href="{{ .Permalink}}"><i class="las la-angle-double-right"></i></a>
+            {{ end }}
+            
+
+            </div>
        </div>
    
         
