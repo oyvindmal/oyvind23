@@ -140,3 +140,24 @@ video {
     margin-top:60px;
     padding:5px 15px 5px 15px;
 }
+
+.frontpagecontent {
+    width:100vh;
+    margin-top:70px;
+    padding:5px 15px 5px 15px;
+    flex:wrap;
+    display:flex;
+    justify-content: center;
+ 
+}
+
+.frontpagebox {
+    background: #eee;
+    margin:15px;
+    padding:10px;
+    flex-grow: 1;
+}
+
+.frontpage {
+    background: url(../bg.jpg);
+}
