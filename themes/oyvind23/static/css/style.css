@@ -125,3 +125,13 @@ video {
     border-radius: 5px;
     border:2px #eee solid;
   }
+
+  header a:link {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  header a:visited {
+    color: #fff;
+    text-decoration: none;
+}
