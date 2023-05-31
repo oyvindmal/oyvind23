@@ -1,0 +1,9 @@
+{{- $imageURL := .Get "url" -}}
+{{- $imageAlt := .Get "alt" -}}
+{{- $groupData := .Get "group" -}}
+
+<li>
+    <a href="{{ $imageURL }}" data-lightbox="{{ $groupData }}">
+        <img src="{{ $imageURL }}" alt="{{ $imageAlt }}">
+    </a>
+</li>

@@ -65,3 +65,14 @@ Morbi at auctor ex. Curabitur condimentum, turpis quis finibus ornare, dolor leo
 </p>
 {{< /boxtext >}}
 {{< /box >}}
+
+{{< box class="textwhite" style="background-color: darkslategray;" >}}
+{{< boxgallery >}}
+  {{< boxgalleryimage url="https://assets.oyvindmal.no/testbilder/1.jpg" alt="Kitten 1" group="gallery1" >}}
+{{< boxgalleryimage url="https://assets.oyvindmal.no/testbilder/2.jpg" alt="Kitten 2" group="gallery1" >}}
+{{< boxgalleryimage url="https://assets.oyvindmal.no/testbilder/3.jpg" alt="Kitten 3" group="gallery1" >}}
+
+{{< /boxgallery >}}
+
+
+{{< /box >}}
