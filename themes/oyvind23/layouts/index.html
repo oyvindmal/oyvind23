@@ -5,8 +5,8 @@
         <div class="frontpagecontent">
 
         
-            {{ range .Site.RegularPages.ByDate }}
-            {{ if ne .Type "Page" }}
+            {{ range .Site.RegularPages.ByDate.Reverse }}
+            {{ if ne .Section "pages" }}
               <div class="frontpagebox">
                 <div class="pageblock">
                   <div class="front-image">
