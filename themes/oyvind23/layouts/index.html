@@ -3,7 +3,7 @@
     <div class="container">
     
         <div class="frontpagecontent">
-            {{ range .Site.Pages.GroupBy "Type" }}
+            {{ range .Site.RegularPages.GroupBy "Type" }}
             {{ if not (or (eq .Key "page") (eq .Key "pages")) }}
               <div class="frontpagebox">
                 <h2>{{ .Key }}</h2>
