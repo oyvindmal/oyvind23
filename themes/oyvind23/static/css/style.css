@@ -126,6 +126,10 @@ video {
     border:2px #eee solid;
   }
 
+  header {
+    font-family: 'Special Elite', cursive;
+    text-transform: uppercase;
+  }
   header a:link {
       color: #fff;
       text-decoration: none;
