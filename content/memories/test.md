@@ -2,6 +2,7 @@
 title: "Test av longread"
 date: 2023-05-30T22:10:52+02:00
 draft: false
+image: "https://placekitten.com/300/200"
 ---
 
 {{< box  style="background-image: url(/bg.jpg);">}}
