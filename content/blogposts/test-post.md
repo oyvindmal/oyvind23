@@ -3,6 +3,8 @@ title: "Test Post"
 date: 2023-03-30T20:38:07+02:00
 draft: false
 image: "https://placekitten.com/300/200"
+frontpage: false
+
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies lectus vitae dapibus malesuada. Nullam rutrum sagittis ligula, vel malesuada mi facilisis id. Vivamus elementum semper dolor nec pellentesque. Cras ligula nulla, feugiat eget erat nec, posuere rhoncus nunc. Mauris feugiat a tellus eget mollis. Curabitur et mauris finibus, elementum turpis eget, volutpat velit. Nullam sit amet urna arcu. Suspendisse nec diam nec lectus congue consectetur non nec leo. Donec nec facilisis tortor. Cras in leo non est porta efficitur. Aliquam fringilla, mauris tincidunt molestie mollis, ipsum enim mattis nunc, ac consequat urna neque quis metus. Ut tempus ipsum eget dapibus scelerisque.
