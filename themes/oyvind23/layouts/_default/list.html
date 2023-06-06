@@ -1,27 +1,23 @@
 {{ partial "partials/fronthead.html" . }}
 {{ partial "partials/header.html" . }}
-<div class="container">
-    
-    <div class="frontpagecontent">
-
-          {{ range .Pages.ByDate.Reverse }}
-            <div class="frontpagebox">
-              <div class="pageblock">
-                <div class="front-image">
-                  <img src="{{ .Params.image }}" alt="{{ .Title }}">
-                </div>
-                <div class="front-title">
-                  <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
-                </div>
-              </div>
-            </div>
-          {{ end }}
-    
-      
-      
-      
-
+<div class="listcontainer">
+        
+  {{ $counter := 0 }}
+  {{ range .RegularPages}}
+     {{ $counter = add $counter 1 }}
+     <div class="box">
+      {{ if eq (mod $counter 2) 0 }}
+        <div class="textbox" ><img class="circleimage" src="{{ .Params.image }}" alt="{{ .Title }}"></div>
+        <div class="textbox" ><h2>{{ .Title }}</h2>
+          <p>{{ .Date.Format "January 2, 2006" }}</p></div>
+      {{ else }}
+        <div class="textbox" ><h2>{{ .Title }}</h2>
+          <p>{{ .Date.Format "January 2, 2006" }}</p></div>
+        <div class="textbox" ><img class="circleimage" src="{{ .Params.image }}" alt="{{ .Title }}"></div>
+      {{ end }}
     </div>
+  {{ end }}
+  
 
 </div>
     {{ partial "partials/footer.html" . }}

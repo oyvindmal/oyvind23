@@ -93,6 +93,10 @@ video {
   display:flex;
 }
 
+.textbox > * {
+  flex-grow: 1;
+}
+
 .circleimage {
   border-radius: 50%;
   width:300px;
@@ -171,11 +175,6 @@ video {
     background-repeat: no-repeat;
   }
 
-  /*blackbox*/
-
-  .frontlightbox {
-      background-color: #fff;
-  }
 
   /* nav */
   nav {
