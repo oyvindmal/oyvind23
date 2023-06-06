@@ -242,3 +242,9 @@ Boxes
   background-color: var(--charcoal);
   color: #ffffff; /* White or light color */
 }
+
+.readmore a {
+  color: inherit;
+  font-size:2em;
+}
+

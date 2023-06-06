@@ -9,10 +9,14 @@
       {{ if eq (mod $counter 2) 0 }}
         <div class="textbox" ><img class="circleimage" src="{{ .Params.image }}" alt="{{ .Title }}"></div>
         <div class="textbox" ><h2>{{ .Title }}</h2>
-          <p>{{ .Date.Format "January 2, 2006" }}</p></div>
+          <p>{{ .Date.Format "January 2, 2006" }}</p>
+        <p class="readmore"><a href="{{ .Permalink  }}"><i class="las la-arrow-circle-right"></i></a></p>
+        </div>
       {{ else }}
         <div class="textbox" ><h2>{{ .Title }}</h2>
-          <p>{{ .Date.Format "January 2, 2006" }}</p></div>
+          <p>{{ .Date.Format "January 2, 2006" }}</p>
+          <p class="readmore"><a href="{{ .Permalink  }}"><i class="las la-arrow-circle-right"></i></a></p>
+        </div>
         <div class="textbox" ><img class="circleimage" src="{{ .Params.image }}" alt="{{ .Title }}"></div>
       {{ end }}
     </div>
