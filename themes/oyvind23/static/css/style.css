@@ -137,91 +137,13 @@ video {
     border:2px #eee solid;
   }
 
-  header {
-    text-align:center;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:100;
-    color: #fff;
-    font-family: 'Rubik', sans-serif;
-    text-transform: uppercase;
-   
-}
-  header a:link {
-      color: #fff;
-      text-decoration: none;
-  }
-
-  header a:visited {
-    color: #fff;
-    text-decoration: none;
-}
-
-header li {
-    list-style-type: none;
-}
+ 
 
 .pagecontent {
     margin-top:100px;
     padding:5px 15px 5px 15px;
 }
 
-.frontpagecontent {
-    width:100vh;
-    margin-top:100px;
-    padding:5px 15px 5px 15px;
-    flex:wrap;
-    display:flex;
-    justify-content: center;
- 
-}
-
-.frontpagebox {
-
-    margin:15px;
-    padding:10px;
-    width:100vw;
-  
-}
-
-.frontpage {
-    background: #0E6BA8;
-    margin-top:80px;
-}
-
-
-  
-  .frontpagebox h2 {
-    /* Styles for the group header */
-  }
-  
-  .pageblock {
-    /* Styles for the individual page block */
-  }
-  
-  .front-image {
-    /* Styles for the image div */
-  }
-  
-  .front-image img {
-    /* Styles for the image within the image div */
-  }
-  
-  .front-title {
-    /* Styles for the title div */
-  }
-  
-  .front-title a {
-    /* Styles for the title link */
-    color: #000;
-    
-  }
-  
-  .front-title h3 {
-    /* Styles for the title heading within the title div */
-  }
   
 
   /*
@@ -258,7 +180,7 @@ header li {
   /* nav */
   nav {
       text-align: center;
-      width:100vw;
+   
   }
   nav a {
       color: #fff;
@@ -270,3 +192,45 @@ header li {
   nav li {
       list-style-type: none;
   }
+
+  header {
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase; 
+    background: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+   
+}
+
+header h1 {
+  flex: 1;
+  padding-left:20px;
+}
+
+header nav{
+  flex:8
+}
+  header a:link {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  header a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+header li {
+
+}
