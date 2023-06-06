@@ -1,31 +1,43 @@
 {{ partial "partials/fronthead.html" . }}
-{{ partial "partials/header.html" . }}
+
     <div class="container">
-    
-        <div class="frontpagecontent">
+      {{ partial "partials/header.html" . }}
+    <div class="frontbox frontlightbox">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec velit magna. Nulla vel molestie est, id congue sapien. Phasellus ut velit varius, congue enim vel, euismod justo. Suspendisse potenti. Praesent nec bibendum leo. Fusce nisi nibh, pulvinar ut risus ut, sollicitudin dapibus nulla. Donec gravida, ante sed interdum sodales, nulla justo dapibus augue, sed commodo massa libero non nisi. Curabitur vitae dictum lectus. Fusce in nisi lacinia, blandit tellus vitae, ultrices nibh. Donec massa nisi, vehicula in tincidunt id, hendrerit a turpis.
+        </p>
+        <p>
+        Sed vitae suscipit ante. Phasellus aliquam vel leo sed auctor. Curabitur commodo aliquet pulvinar. Quisque hendrerit ipsum eget neque semper, id finibus neque venenatis. Nulla volutpat tincidunt nisi, non euismod lectus lobortis eget. Aenean luctus nisl non nunc ullamcorper ullamcorper. Praesent velit lorem, dictum vitae placerat eu, malesuada vitae dolor. Quisque rhoncus tellus in sapien vestibulum, ac dictum magna condimentum. Donec quis lacus et diam hendrerit sagittis vitae vel ex. Nunc lectus quam, malesuada vitae auctor nec, mattis nec metus. Praesent ultricies, mauris at luctus sagittis, urna quam finibus nulla, at aliquet justo nisl vitae sem. Ut in finibus diam.
+        </p>
+        <p>
+        Duis nec ante vehicula, pulvinar elit in, convallis risus. Quisque dui purus, egestas varius condimentum ut, hendrerit suscipit ex. Quisque porttitor dui ante, et tempus orci semper vitae. Aliquam sollicitudin quam augue, eu finibus justo viverra in. Phasellus egestas mauris sapien, nec pulvinar elit mollis eu. Etiam in tempor turpis. In ut ante ex. In ut leo posuere purus mattis vehicula sed quis felis. Mauris congue lacus et libero consequat, sit amet luctus quam volutpat. Mauris consequat dictum risus sit amet malesuada.
+        </p>
+    </div>
+    <div class="frontbox frontlightbox">
+      {{ range where .Site.RegularPages "Type" "blogposts" }}
+      <div class="frontitem">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Date.Format "January 2, 2006" }}</p>
+      </div>
+
+{{ end }}
+
+    </div>
+    <div class="frontbox frontblackbox">
+        <nav>
+          <ul>
+            <li>
+                <a href="/pages/about">About</a>
+                <a href="/blogposts">Blogg</a>
+                <a href="/memories">Minner</a>
+                <a href="/tutorials">Tutorials</a>
+                <a href="/galleries">Bilder</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
 
         
-            {{ range .Site.RegularPages.ByDate.Reverse }}
-            {{ if ne .Section "pages" }}
-              <div class="frontpagebox">
-                <div class="pageblock">
-                  <div class="front-image">
-                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
-                  </div>
-                  <div class="front-title">
-                    <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
-                  </div>
-                </div>
-              </div>
-            {{ end }}
-          {{ end }}
-          
-          
-          
-          
-          
-
-        </div>
    
     </div>
     {{ partial "partials/footer.html" . }}

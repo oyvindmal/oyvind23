@@ -1,20 +1,16 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
 body {
 
     margin:0;
     padding:0;
     font-family: 'Raleway', sans-serif;
+    
 }
 
-header {
-    text-align:center;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:100;
-    color: #fff;
-    background: #000;
-}
+
 
 .container {
     display:flex;
@@ -84,8 +80,7 @@ video {
     flex: 0 0 100%;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 .headline {
@@ -127,9 +122,17 @@ video {
   }
 
   header {
-    font-family: 'Special Elite', cursive;
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
-  }
+   
+}
   header a:link {
       color: #fff;
       text-decoration: none;
@@ -160,14 +163,16 @@ header li {
 }
 
 .frontpagebox {
-    background: #eee;
+
     margin:15px;
     padding:10px;
-    flex-grow: 1;
+    width:100vw;
+  
 }
 
 .frontpage {
-    background: url(../bg.jpg);
+    background: #0E6BA8;
+    margin-top:80px;
 }
 
 
@@ -202,3 +207,50 @@ header li {
     /* Styles for the title heading within the title div */
   }
   
+
+  /*
+  .Box backgrounds
+  */
+
+  .boxDeepOrange {
+     background-color: var(--deep-orange);
+
+  }
+
+  .boxLightGray {
+
+    background-color: var(--light-grey);
+  }
+
+  .boxOnyx {
+      background-color: var(--onyx);
+  }
+  
+
+
+  .boxWithImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*blackbox*/
+
+  .frontlightbox {
+      background-color: #fff;
+  }
+
+  /* nav */
+  nav {
+      text-align: center;
+      width:100vw;
+  }
+  nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+
+  }
+
+  nav li {
+      list-style-type: none;
+  }

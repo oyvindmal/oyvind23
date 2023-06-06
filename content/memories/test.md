@@ -5,7 +5,7 @@ draft: false
 image: "https://placekitten.com/300/200"
 ---
 
-{{< box  style="background-image: url(/bg.jpg);">}}
+{{< box class="boxWithImage" style="background-image: url(/bg.jpg);">}}
 <h1 class="headline">What is lorem ipsum?</h1>
 {{< /box >}}
 
@@ -44,11 +44,11 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 {{< boxvideo src="https://assets.oyvindmal.no/testvideo/video2_25.webm" >}}
 {{< /box >}}
 
-{{< box style="background-color: black;" >}}
+{{< box class="boxDeepOrange" >}}
 {{< boxvideo src="https://assets.oyvindmal.no/testvideo/video1_25.webm" >}}
 {{< /box >}}
 
-{{< box style="background-color: white;" class="aligntop" >}}
+{{< box  class="aligntop boxLightGray" >}}
 
 
 {{< boxtext >}}

@@ -14,8 +14,13 @@ Denne siden er under arbeid.
 * Logo
 * Header
 * Meny
-* Archetypes
+* Bytte ut Tilbake symbol
+* ~~Variabler i css~~
+* Tagger
+* ~~Archetypes~~
 
 
 # Emmet snippets
 * Bildegalleri
+
+https://coolors.co/palette/00072d-001c55-0a2472-0e6ba8-a6e1fa
