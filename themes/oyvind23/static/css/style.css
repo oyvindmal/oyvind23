@@ -60,27 +60,33 @@ video {
     height:60vh;
 }
 
-.boxcontent {
-    padding:25px;
-    display:flex;
-
-}
-
-.boxcontent div {
-    margin:20px;
-}
 
 .aligntop {
     align-items: flex-start !important;
 }
 .box {
     width:100vw;
-    height:100vh;
+    min-height:30vh;
     display:flex;
+  
     flex: 0 0 100%;
     justify-content: center;
     align-items: center;
 
+}
+
+.textbox {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  display:flex;
+}
+
+.circleimage {
+  border-radius: 50%;
+  width:300px;
+  height: 300px;
 }
 
 .headline {

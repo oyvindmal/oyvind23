@@ -4,5 +4,5 @@
 {{ $extraClasses := .Get "class" }}
 {{ $classes = union $classes (split $extraClasses " ") }}
 <div class="{{ delimit $classes " " }}"{{ with $style }} style="{{ $style | safeCSS }}"{{ end }}>
-    <div class="boxcontent">  {{ .Inner }}</div>
+  
 </div>
