@@ -75,7 +75,7 @@ video {
 }
 .box {
     width:100vw;
-    min-height:30vh;
+    min-height:50vh;
     display:flex;
   
     flex: 0 0 100%;
