@@ -75,6 +75,16 @@ video {
 
 }
 
+.listcontainer .box:nth-child(even) {
+  /* CSS properties for even children */
+  background: hotpink;
+}
+
+.listcontainer .box:nth-child(odd) {
+  background: yellow;
+}
+
+
 .textbox {
   flex-grow: 1;
   justify-content: center;

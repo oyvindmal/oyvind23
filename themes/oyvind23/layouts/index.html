@@ -3,17 +3,18 @@
     <div class="container">
       {{ partial "partials/header.html" . }}
     
-   <div class="box textwhite" style="background: #000;">
+   <div class="box" style="background: #eee;">
      <div class="textbox" ><p>HMM</p></div>
      <div class="textbox" ><h1>Dette er en overskrift</h1></div>
    </div>
+      
+    </div>
+
+    <div class="listcontainer">
         
    {{ range where .Site.RegularPages "Type" "blogposts" }}
-   <div class="frontitem">
 
-   </div>
-
-   <div class="box textwhite">
+   <div class="box">
     <div class="textbox" ><img class="circleimage" src="{{ .Params.image }}" alt="{{ .Title }}"></div>
     <div class="textbox" ><h2>{{ .Title }}</h2>
       <p>{{ .Date.Format "January 2, 2006" }}</p></div>
