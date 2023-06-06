@@ -5,8 +5,10 @@ draft: false
 image: "https://placekitten.com/300/200"
 ---
 
-{{< box class="boxWithImage" style="background-image: url(/bg.jpg);">}}
+{{< box class="box fullheight textwhite norepeat" style="background-image: url(/bg.jpg);">}}
+{{< boxtext >}}
 <h1 class="headline">What is lorem ipsum?</h1>
+{{< /boxtext >}}
 {{< /box >}}
 
 

@@ -243,6 +243,17 @@ Boxes
   color: #ffffff; /* White or light color */
 }
 
+.fullheight {
+
+  height:100vw;
+
+}
+
+.norepeat {
+
+  background-repeat: no-repeat;
+}
+
 .readmore a {
   color: inherit;
   font-size:2em;
