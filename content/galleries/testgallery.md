@@ -3,6 +3,7 @@ title: "Testgallery"
 date: 2023-05-31T20:36:35+02:00
 draft: false
 image: "https://placekitten.com/300/200"
+frontpage: true
 ---
 Valorock er en boutique rockefestival som feirer det beste innen rockemusikk. Hvert år samler festivalen entusiastiske musikkelskere fra hele landet til en uforglemmelig opplevelse. Med en nøye kuratert lineup bestående av både lokale helter og internasjonale rockelegender, er Valorock stoltheten av den norske musikkscenen. Fra veldige gitariff og pulserende trommer til rå og kraftfulle vokaler, skaper festivalen en atmosfære av ren rockeekstase. 
 
