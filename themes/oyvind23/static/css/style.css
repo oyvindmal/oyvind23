@@ -2,6 +2,15 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
+
+:root {
+  /* Define CSS variables for each color */
+  --ash-gray: #cad2c5ff;
+  --cambridge-blue: #84a98cff;
+  --hookers-green: #52796fff;
+  --dark-slate-gray: #354f52ff;
+  --charcoal: #2f3e46ff;
+} 
 body {
 
     margin:0;
@@ -93,9 +102,7 @@ video {
   display:flex;
 }
 
-.textbox > * {
-  flex-grow: 1;
-}
+
 
 .circleimage {
   border-radius: 50%;
@@ -150,30 +157,6 @@ video {
 
   
 
-  /*
-  .Box backgrounds
-  */
-
-  .boxDeepOrange {
-     background-color: var(--deep-orange);
-
-  }
-
-  .boxLightGray {
-
-    background-color: var(--light-grey);
-  }
-
-  .boxOnyx {
-      background-color: var(--onyx);
-  }
-  
-
-
-  .boxWithImage {
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
 
   /* nav */
@@ -202,7 +185,7 @@ video {
     color: #fff;
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase; 
-    background: black;
+    background: var(--charcoal);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +212,31 @@ header nav{
 }
 
 
+/*
+Boxes
+*/
 
-header li {
+.ash-gray-bg {
+  background-color: var(--ash-gray);
+  color: #000000; /* Black or dark color */
+}
 
+.cambridge-blue-bg {
+  background-color: var(--cambridge-blue);
+  color: #ffffff; /* White or light color */
+}
+
+.hookers-green-bg {
+  background-color: var(--hookers-green);
+  color: #ffffff; /* White or light color */
+}
+
+.dark-slate-gray-bg {
+  background-color: var(--dark-slate-gray);
+  color: #ffffff; /* White or light color */
+}
+
+.charcoal-bg {
+  background-color: var(--charcoal);
+  color: #ffffff; /* White or light color */
 }
