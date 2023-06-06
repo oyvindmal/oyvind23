@@ -86,11 +86,13 @@ video {
 
 .listcontainer .box:nth-child(even) {
   /* CSS properties for even children */
-  background: hotpink;
+  background-color: var(--cambridge-blue);
+  color: #ffffff; /* White or light color */
 }
 
 .listcontainer .box:nth-child(odd) {
-  background: yellow;
+  background-color: var(--hookers-green);
+  color: #ffffff; /* White or light color */
 }
 
 
