@@ -11,6 +11,7 @@ draft: false
     * Formattering i blokk
 * ~~Meny~~~
     * Hovereffekt?
+    * https://gohugo.io/templates/menu-templates/
 * Blokkside
     * Galleri
     * Tekst + bilde 
