@@ -4,8 +4,10 @@
       {{ partial "partials/header.html" . }}
     
    <div class="box dark-slate-gray-bg ">
-     <div class="textbox" ><p>HMM</p></div>
-     <div class="textbox" ><h1>Dette er en overskrift</h1></div>
+     <div class="textbox" ><img class="circleimage" src="{{ .Params.image }}" alt="{{ .Title }}"></div>
+     <div class="textbox" ><h1>{{.Title}}</h1>
+      {{.Content}} 
+     </div>
    </div>
       
     </div>
