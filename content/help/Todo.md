@@ -8,6 +8,7 @@ draft: false
 # Rewrite juni 23
 
 * ~~Forside~~
+    * Formattering i blokk
 * ~~Meny~~~
     * Hovereffekt?
 * Blokkside
