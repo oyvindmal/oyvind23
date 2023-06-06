@@ -2,6 +2,7 @@
 title: "Test av longread"
 date: 2023-05-30T22:10:52+02:00
 draft: false
+frontpage: true
 image: "https://placekitten.com/300/200"
 ---
 
