@@ -7,18 +7,19 @@ draft: false
 
 # Rewrite juni 23
 
-* Forside
-* Meny
+* ~~Forside~~
+* ~~Meny~~~
+    * Hovereffekt?
 * Blokkside
     * Galleri
     * Tekst + bilde 
     * Stor tekst
     * Tekst blokk lang
     * Videoblokk
-* Vanlig side
+* ~~Vanlig side~~
 * Hjelpeside
-* Bloggpost
-* Tutorial
+* ~~Bloggpost~~
+* ~~Tutorial~~
 * Autosnippets for VScode
 
 
@@ -29,20 +30,20 @@ Blokker skal kunne være full vh og vw eller ta den plassen de behøver.
 --- 
 Denne siden er under arbeid.
 
-* Gjøre slik at bare saker tagget som forside er synlig på forsiden
-* Redesigne forsideblokker
-* Fargevalg
+* ~~Gjøre slik at bare saker tagget som forside er synlig på forsiden~~
+* ~~Redesigne forsideblokker~~
+* ~~Fargevalg~~
 * Fonter
-* Logo
-* Header
-* Meny
+* ~~Logo~~
+* ~~Header~~
+* ~~Meny~~
 * Bytte ut Tilbake symbol
 * ~~Variabler i css~~
 * Tagger
 * ~~Archetypes~~
 
 
-# Emmet snippets
+# Hjelpesider
 * Bildegalleri
 
 # Farger
