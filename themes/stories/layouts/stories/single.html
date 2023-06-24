@@ -1,0 +1,12 @@
+{{ partial "partials/head.html" . }}
+<header>
+    <div id="header-left"><button id="prevButton" class="button"><i class="las la-angle-double-left"></i></button></div>
+    <h1>My story title goes here <span id="progress" class="button"></span></h1>
+    <div id="header-right"><button id="nextButton" class="button"><i class="las la-angle-double-right"></i></button></div>
+</header>
+<div id="story">
+    {{.Content}}
+    {{ partial "partials/storyend.html" . }}
+</div>
+{{ partial "partials/storyjs.html" . }}
+{{ partial "partials/footer.html" . }}
