@@ -1,0 +1,5 @@
+{{- $src := .Get "src" -}}
+{{- $autoplay := .Get "autoplay" | default "true" -}}
+{{- $muted := .Get "muted" | default "true" -}}
+
+<video class="slide-video" autoplay="{{ $autoplay }}" muted="{{ $muted }}" src="{{ $src }}"></video>
