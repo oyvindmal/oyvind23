@@ -10,18 +10,20 @@ header {
     grid-template-columns: 1fr 5fr 1fr;
     place-items:center;
     position:sticky;
-    width:100vw;
+    width:100%;
     background: #fff;
     opacity: 0.7;
+    display:none;
 
 }
 
 
 #story {
 
-    display:grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hidden {
@@ -36,10 +38,27 @@ header {
 
 
 .slide {
-    width:1080px;
-    height:1920px;
+ 
+    height: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 1px); /* Subtract 1px to account for potential scrollbars */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
+.slide-video {
+    width: auto;
+    height: 100%;
+  }
+
+  .slide-image {
+    width: auto;
+    height: 100%;
+  }
 #end {
     color:#fff;
     background-color: #000;
